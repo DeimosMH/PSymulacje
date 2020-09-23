@@ -1,0 +1,188 @@
+
+**** 09/22/20 09:03:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-OE"  [ C:\Users\Deimos\Desktop\Maciej Hejlasz\OrcadSym\SymV01-PSpiceFiles\SCHEMATIC1\OE.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "OE.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_DATA\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SYMV01
+R_R8         N24250 N24134  9k TC=0,0 
+C_C3         N24246 N28116  10u  TC=0,0 
+R_R12         0 N24182  100k TC=0,0 
+X_Q2         N24250 N24246 N24344 awb2n1613 PARAMS:                            
++                 
+R_R11         0 N24344  3k TC=0,0 
+C_C4         N24182 N24250  10u  TC=0,0 
+V_V3         N24134 0 24
+R_R7         N24246 N24134  51.6k TC=0,0 
+V_V4         N28116 0 DC 0 AC 0
++SIN 0 0.1 1k 0 0 0
+R_R10         0 N24246  20k TC=0,0 
+R_R15         0 N26017  500k TC=0,0 
+R_R13         N26081 N25969  51.6k TC=0,0 
+V_V6         N26089 0 DC 0 AC 0
++SIN 0 0.1 1k 0 0 0
+C_C6         N26089 N30516  10u  TC=0,0 
+R_R16         0 N26081  20k TC=0,0 
+X_Q3         N29638 N26081 N26179 awb2n1613 PARAMS:                            
++                 
+R_R14         N29638 N25969  9k TC=0,0 
+R_R17         0 N26179  3k TC=0,0 
+V_V5         N25969 0 24
+C_C5         N26017 N29638  10u  TC=0,0 
+C_C7         N28696 N28772  10u  TC=0,0 
+C_C8         N28664 N28748  10u  TC=0,0 
+R_R21         0 N28772  3k TC=0,0 
+R_R20         0 N28664  20k TC=0,0 
+V_V8         N28748 0 DC 0 AC 0
++SIN 0 0.1 1k 0 0 0
+R_R22         0 N28696  100k TC=0,0 
+R_R18         N28664 N28602  51.6k TC=0,0 
+V_V7         N28602 0 24
+X_Q4         N28602 N28664 N28772 awb2n1613 PARAMS:                            
++                 
+C_C9         0 N26081  10u  TC=0,0 
+R_R23         N26179 N30516  500 TC=0,0 
+
+**** RESUMING OE.cir ****
+.END
+
+**** 09/22/20 09:03:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-OE"  [ C:\Users\Deimos\Desktop\Maciej Hejlasz\OrcadSym\SymV01-PSpiceFiles\SCHEMATIC1\OE.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Q2.model4     X_Q3.model4     X_Q4.model4     
+               NPN             NPN             NPN             
+       LEVEL    1               1               1            
+          IS   35.670000E-15   35.670000E-15   35.670000E-15 
+          EG    1.11            1.11            1.11         
+          BF   96.84           96.84           96.84         
+          NF    1               1               1            
+         VAF  215             215             215            
+         IKF   10              10              10            
+         ISE    5.191000E-15    5.191000E-15    5.191000E-15 
+          NE    1.16            1.16            1.16         
+          BR   12.36           12.36           12.36         
+          NR    1               1               1            
+         VAR   39.23           39.23           39.23         
+         IKR     .1474           .1474           .1474       
+         ISC  661.400000E-15  661.400000E-15  661.400000E-15 
+          NC    1.256           1.256           1.256        
+         ISS    0               0               0            
+         IRB  946.300000E-06  946.300000E-06  946.300000E-06 
+          RE     .637            .637            .637        
+          RC     .6815           .6815           .6815       
+         CJE   72.520000E-12   72.520000E-12   72.520000E-12 
+         VJE     .7757           .7757           .7757       
+         MJE     .3519           .3519           .3519       
+         CJC   20.910000E-12   20.910000E-12   20.910000E-12 
+         VJC     .4087           .4087           .4087       
+         MJC     .334            .334            .334        
+        XCJC    1               1               1            
+         CJS    0               0               0            
+         VJS     .75             .75             .75         
+          TF  871.400000E-12  871.400000E-12  871.400000E-12 
+         XTF   18.1            18.1            18.1          
+         VTF    2.772           2.772           2.772        
+         ITF    1               1               1            
+          TR  107.000000E-09  107.000000E-09  107.000000E-09 
+         XTB    1.5             1.5             1.5          
+          KF    0               0               0            
+          AF    1               1               1            
+          CN    2.42            2.42            2.42         
+           D     .87             .87             .87         
+
+
+**** 09/22/20 09:03:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-OE"  [ C:\Users\Deimos\Desktop\Maciej Hejlasz\OrcadSym\SymV01-PSpiceFiles\SCHEMATIC1\OE.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N24134)   24.0000 (N24182)    0.0000 (N24246)    6.2935 (N24250)    7.2948     
+
+(N24344)    5.6538 (N25969)   24.0000 (N26017)    0.0000 (N26081)    6.2935     
+
+(N26089)    0.0000 (N26179)    5.6538 (N28116)    0.0000 (N28602)   24.0000     
+
+(N28664)    6.3199 (N28696)    0.0000 (N28748)    0.0000 (N28772)    5.6820     
+
+(N29638)    7.2948 (N30516)    5.6538 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -2.199E-03
+    V_V4         0.000E+00
+    V_V6         0.000E+00
+    V_V5        -2.199E-03
+    V_V8         0.000E+00
+    V_V7        -2.210E-03
+
+    TOTAL POWER DISSIPATION   1.59E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/22/20 09:03:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-OE"  [ C:\Users\Deimos\Desktop\Maciej Hejlasz\OrcadSym\SymV01-PSpiceFiles\SCHEMATIC1\OE.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =        5.42
+  Total job time (using Solver 1)   =         .06
+
